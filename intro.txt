@@ -1,0 +1,12 @@
+Backend
+  -- Python (Programming Language)
+  -- Django 
+    -- api (Django Rest framework ) - json data 
+  -- virtualenv 
+
+Frontend
+  -- Javascript 
+  -- React / NextJS 
+
+Database
+ -- PostgreSQL 
