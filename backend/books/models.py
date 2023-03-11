@@ -19,6 +19,8 @@ class Book(models.Model):
     book_category = models.ForeignKey(
         BookCategory, on_delete=models.CASCADE, related_name="book_category_instance")
     is_book_available = models.BooleanField(default=False)
+    book_image = models.ImageField(
+        upload_to="book", default="https://banner2.cleanpng.com/20180329/vke/kisspng-python-high-level-programming-language-language-5abd4cc0d3dc94.7432282215223553928678.jpg")
 
     date_created = models.DateTimeField(auto_now_add=True)
     date_modified = models.DateTimeField(auto_now=True)
