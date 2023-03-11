@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project X - Book Store</title>
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navbar brand -->
+          <a class="navbar-brand mt-2 mt-lg-0" href="#">
+            <h6 class="fst-italic mt-2">
+              Book<span class="text-danger">Mag</span>
+            </h6>
+          </a>
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trending books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pre-order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categories</a>
+            </li>
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+
+        <!-- Right elements -->
+        <div class="d-flex align-items-center">
+          <!-- Icon -->
+          <a class="text-reset me-3" href="#">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+
+          <!-- Notifications -->
+          <div class="dropdown">
+            <a
+              class="text-reset me-3 dropdown-toggle hidden-arrow"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-bell"></i>
+              <span class="badge rounded-pill badge-notification bg-danger"
+                >1</span
+              >
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <li>
+                <a class="dropdown-item" href="#">Some news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Avatar -->
+          <div class="dropdown">
+            <a
+              class="dropdown-toggle d-flex align-items-center hidden-arrow"
+              href="#"
+              id="navbarDropdownMenuAvatar"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                class="rounded-circle"
+                height="25"
+                alt="Black and White Portrait of a Man"
+                loading="lazy"
+              />
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="navbarDropdownMenuAvatar"
+            >
+              <li>
+                <a class="dropdown-item" href="#">My profile</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Settings</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Right elements -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Carousel wrapper -->
+    <div
+      id="carouselDarkVariant"
+      class="carousel slide carousel-fade carousel-dark h-2"
+      data-mdb-ride="carousel"
+    >
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button
+          data-mdb-target="#carouselDarkVariant"
+          data-mdb-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          data-mdb-target="#carouselDarkVariant"
+          data-mdb-slide-to="1"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          data-mdb-target="#carouselDarkVariant"
+          data-mdb-slide-to="2"
+          aria-label="Slide 1"
+        ></button>
+      </div>
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <img
+            src="https://www.gannett-cdn.com/media/USATODAY/USATODAY/2013/03/22/ap-obit-achebe-16_9.jpg?width=2164&height=1223&fit=crop&format=pjpg&auto=webp"
+            class="d-block w-100"
+            alt="Motorbike Smoke"
+          />
+          <div class="carousel-caption d-none d-md-block text-white">
+            <h5>Read history and stay healthy</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <img
+            src="https://universitypressplc.com/wp-content/uploads/2022/02/Books-on-a-shelf.jpg"
+            class="d-block w-100"
+            alt="Mountaintop"
+          />
+          <div class="carousel-caption d-none d-md-block text-white">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <img
+            src="https://d7nm3c5ruslmy.cloudfront.net/africanexponent-com-client/images/africanexponent.com/general/afr1500863596375_aspR_1.503_w1536_h1022_e.jpg"
+            class="d-block w-100"
+            alt="Woman Reading a Book"
+          />
+          <div class="carousel-caption d-none d-md-block text-white">
+            <h5>Third slide label</h5>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-mdb-target="#carouselDarkVariant"
+        data-mdb-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-mdb-target="#carouselDarkVariant"
+        data-mdb-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel wrapper -->
+
+    <!-- center  -->
+    <div class="container mt-3">
+      <h3>Trending books</h3>
+      <hr class="text-secondary" />
+      <!-- Trending books  -->
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card mt-3">
+            <div
+              class="bg-image hover-overlay ripple"
+              data-mdb-ripple-color="light"
+            >
+              <img
+                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgVFRUYGBgaGhgYGhoYGBgYHhoYGhgZGhgaGBgcIS4lHB4rIRgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMBgYGEAYGEDEdFh0xMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMf/AABEIALIBHAMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAEBQMGAAECB//EADoQAAIBAgUCBAUCBAUEAwAAAAECAAMRBAUSITEiQVFhcYEGEzKRobHRFEJSwSMzYnLwFYLC4Qc0Q//EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCgASRBOBO1gSIJ2BtOFkoEAeiOqHosFoL1Q9FgdokIp05qnThtGntA6wlKMqVKR4SlGNKlArfxDQ6feJUw3lLZnlHp94oShAXDCzYwsbphpIMLAS/wnlNHCR9/DTP4XbiBXmws1/DeUfthPKRPhYCmnUZYwoYm85agJGcMewgHggzTUrwFWYdjC6FYmBy+GkRw0bU6d5tqMBG+F8oFWwssr0YFXoeUCs1sPF9alLLXoRbXw8BE1ORskZ1KMHelAB0zm0LanIikAZhHPw59ZisrGvw6vWfaBcVM6vIwJvTArCCdhZiztRA7RJKqTEWEokAbDp1RhTpyDDJ1RtSpwMo0odRpbTdClGFGnA1hKUYU6czDU4YiQEmdUtoqSjLDm6be8WIkCBKc7CQkU50qQBxThFDBlza3mfTxi7F1WeulBNV9QZyo4A3tftIc++KXTEBKFPXpGkLY3JOxLW9rQH7ZUNdtfSBc7i95Wc9cJU0o40Dni9/fmapZLidDVcQ7gbt8ukbtv/Uw3+0bZD8PgJrKqGO4T6m8tbHgwK/TzRASGDE9iiNc+u0Z5XjqRvcOh/1U3t9yJbEy/V1aerk22A8p1Up22ItASUKlFjpV0v6jn0hooBdiAfC6/wB5Hj8qovu6Kx8bWP3EX/wNVQThq56f/wA6vWth4E7iA4/wxs6ge37Tmrl6tuh9oNl+ZJVf5dZPlVbdOogq/jobgwzEUSNjcEcMP+cQE9Slbbw2gtSnGhzNBdK1gTsGA5MjrUOGG6ngwEVajF2IoyxVKMXYvDXHHnAr1ShBnoR29Hyg1WhASPSgr046q0IFUowFjpGPw+vWZE9OGZJTs8C0Wm7Tq05gVpVkyJMRISqQMppDaVPymqVOHUqe0APC0uqOaFGD4Sj1RxQpQN0aUOpJMp04TTSB1h0hKLNUVkwEBVmq7RcqRrmg2gCLA0Fgmb49cPSLtueFXuzHgCMgsoWd45a+JCqwK0+ld+nWxtfztA5wuZ4kn+GTT8yo2p3W90Dc3PkIfRoUkxAw4xBREBetU1KGqOvbWf0kz0KWBZTUe5PU5X63J7DwWLc2r0a6L8nDNTRm/wAwjdj4L+8C5ZbnGGVAzvoLhtD1GAJQHkKDt29YPV+OKSMERHqje7ojLc9raib+sR4rA4RNCqC7Io1MTqufAdrCS4HOAoOhFS38zLqaw8B2gG1P/kBkWy4epckk60NjOMJ8eUqh/wAa9M+J4H4irH/EqvdS1RyNhdlUetlECwGARyXdBY773aBe8LmKOQKdWnURudLqSPbkSv5zRrUnerSIZLFWF77HkMv94vxWCw2x0KrdnQkEesgGLqIRdy6jbUN2t/qH84t7wC8txWE+UVr1XBJ2UrcLt2I8D3FoZhc3/hP8N3NSkxulRW1FQ3Aa/AkWOy3CuRpf5ZYAg/yOTyR4G/aKMTkFSmdaBXXuAdiPSBZkqoXV3dWpFtWogHftcj9YPiMy1VCEfSgOwG4YDylZyzHFA9MjTvdVY7gHkTurT3upt3Fux8oFvweLSqCUN7GxHh7TK9KVHDYpqbhuG7jjV7R1kudNVdkqAA8pbuPA+cDsUNztIa1Dyjh6dpA9O8CvV6EBqUZYK9GAVKMBHUpQnKks8Iq0ZvL6dngOTONUJZJFpgJKSwulTnFNIdQSBJRpw6nSnFGnD6NOBDhqfVG1GnBKCdUZUlgSokmUTlBJFECWnxJlEipCTLAW5ou0CRIwzPiBJAU/FON+ThnKnqYaV9TttKJkWC0qa9T6EBe39Tg2Ue5v9pbPjrCB0RibWY29xK64LU0oNcKvUwHcIAAPdmMBU1dq1T5tUll1XtfkX4HgJYHzetWT5ZKpSB2UAAADgeJ7TP8ApVGmmuo+pwNqa/3lffFEk9hfgeECyYkJ8slG2HJHJPnFlNqpW9JGItbVYb+kDw2Kdz8tLgHn0noGTYIKq/mBRcPlzo4Z0K9yfGMauYhVKjo8CB+s9AxuEVk02nnOdYRkcsDt5wFtTEnUdVh5g7GZh8Vyp49ePSDM9xwD5eHoYKzWO0CzLTLpa2pQ19F73F/5T2NoSLI7/JdjS+WXFydm2Gjq7gyvZdj9BsSQDtcH8y3ZXWDDQ66xqDX7bb6rQE9dP4hHcqVqUkL8W1eH3is1Sunc2YX9DLhic2BdiqDTf5fGzDSdVx5ESi4gkn6gSPxvxANxGJ12uTccE8+kGGOKsACdQIIPh6zXa57xbVvcmB63lWLWvTV+9rMPA95O9Pynnfwnnho1ArnocgHy8DPT2S4v2PEBRXpRfWp+UfVqUXVqUBLUpzWCTrh9WnI8MnVAOcSMwp5FaAmprDqIkFNYdRWATQEY0EguHpxjSSBqkvVD6awVF3hdOBKBO1nKztRA7pyVZDTbe1veTgQF+Z8QJIfmQ2gKCBVvjOu4ekrC9J7q1ub37e0EyrEI7Vlpqu1kW/cb77972lnz7BCpRa63KgstuQR3E88yioTXTT0lma/bqIAsfcfmBrO3ZKj3/mNgPIbX/ETIGZrX+0Izqu71TrFmHSbeXhCcmo97QHeRYTRv38ZccDWG0rmXpH2HQC0Bu9UWlXzrD6je23haP9QtvA8ViEtuRA88zDBWuVFokY2O4l2zHG0ixCi/p4yqZknJt6QF5a/6xtk+ZMp032MSFzxO6DEMCIF0xGKK2TSu4ZrW3G5sfI+XnKkzdbeZvG1fFa2DeQQW9LH9IjrA6zbex/SAU1QhT+IMDp46r8gzVdiGtfiSKfCAPUFjxaenfA2dfOT5TnrQbX7rPNqmFJ3EOw+MGHrU3pn6QNX/AJCB7BUSB1qUYUXDorjhgD95DVSAmq0pDRp9UZ1Ugyp1QO3WQaYU6SDSYAFOnDaFODUqcYYdIBmGSMKaQSgsNQbQI0HVCkWC0x1QtYHc6E5tNrAmpCTLIafEkWAHmI2gVMQ3H8QJYEpGx9DPI1cfNZr6WVyePAmxtPXOxnj+IqBazkHmo49ixgLse+p3Y2JJuSOLnwjXAo5UaB7mwH3O0A1qjkadRuNJPA9RHdDD1Pl/MZb78c6VNwCBwdx+YBmEwtflHS/hrU/3jima6ga0NvFbMPwZW8Piq6Wqatr7L/67RphsyqOtmYgE8HceIIvAa1MSbcNfwsf0gT4V3vqOle/F9/WTYasWR7MzAcjUbA+8Br1iygoTYGxHnYdoBH8Fh0UkgsRySf2tFWKaiwJREbxBLj83tJkwhYEElmvcG/SP+08wc5U7CyA77G3ECu4ipT6rUtDAEck7+FiYsQ7xxnC/4hUcKAt7c2AiOotmtAZvW0hSOwP3M4wzixJtfxgyvdQDxCRV0rp08kE+g7QNUaGvcbG/fuYUuDINmG8a1cjd0p1VK2PCrsAf3jGnhjWpWKEVE2ItzAXLlwWjrHUxvceUSnDXVrKS3O3h5xycM7voW6lfPje0kxCaDo26ukve0C5fAmKL4RA3KEr7DiO6qylfBFY067U9YZKguv8AuHh5Wl2rrACqJBSm8OZZAy7wIqggxEOqJBysAWikNopB6awykIBlBYYsEowpeIEdP6oWsDpfVCgYEgmAzmckwJ0adh4MjTYeBHmD7QJXkmYKxGw/sICAQCSyC2x612gGvVsrHyJ/E8bSoGdr79bH7kz1jF0yUYB0BdSFu4sSR4zyvG5VUw9YJVAu3UNLBgRfxEAbEKA4Pa4P5lzyfGCmxV1LU3Fj3K+YlTxaahxYjmWfBLqRD3Kj9IBOJy0FtSOrId9iLj1Hac1TYWQXYCwtwPMmHUqagXIgrsGYXOlB4ePmYE2U4B9BG3VyfORYjC/w9XxJF7AXDD0hmW5miEoCrDtvFmZ52BU1X3FwLC/MB7l9bDOtwGB4IG+8nxddFQrTW1xa55lOwOIYs7gWu1/D8RqcUGHNiO0BLjMuHMrmbYIqQbbGWfEYk3tOMZhQ6KzMqItyzMCQBwLhd+YFOQ8CFubnzEixFPQ7qeVJG3Ht5Q3JGAdWdbqDufI+MBvkANRNHzGUJ1gdtu95YcRnSUlS7ByQwaxG9+Dfxlbz9hROui1lqA8fkSrhyTYbQLRicx1tpQkahpJ9T4xdjRZilRtVvv7wY1GWwXt+vjBcQSWtclj+TAZZDjiuKotewVwAPI7f3ntTrPJ/hv4RxFR0dkKIGDEtsdt9hPWiNrQBKgg7DeF1YKeYGOsFKwt4OYA6CFUhIUELpiARTEJHEhpiTgQIKX1Th82pAldQJHNpFmNbRTdxzYhR/qOw/JlErYV1UMb+Z84F+/6vT8TO1x6MdmnlzY9kO7H9ZMuetvpO57wPRczzE06TOlj0uR33VbjaV7C/E1UUUB1M7WvUVboCT9Jt3HnEmDxTv0M/1K1yew229+PeNMsNYl91Cte6W06QvT0qO5P3gNM5ouMM+hmZtauSbEb82H5kBr00rImtX1K+pdr3AvY+9/vOcpqO+umWcIAtyyadwd0H7xRiaCfxlndUUqumycE/ylzwTbnzgPMszanWZ6aI2gWbdbAW5t7i20q/x8NJRgCCSx3N9m2G/wD2Wlod0CtSRAoVToJNhq7dUrfxZRq1KCXGtxuw06WUryLd13NoFYwmOYArYNf9ZZMBiehT4bfaVBU9j+ZacjCHDOb2dKguDbdXAAt7gwGVXMAFt3Ow9TJQ406SL35kFBFPa8zE4UkXV2U/ce4gFYTCU9xYDaQZjSpLbSLnv6wzJaafTUBcgg3VtNx36SYwxvyQjaKCq2oMGdgSLEEbC+23F+8CnYnMFSwAO/A/9STDU2qEMbrv7+86xGlnZ+SSbEjgE9h2EIw7WF/CAJVpgOfKMcp0OHRzcDpZfG+4ifFV+bc329ZJlF0YEE3Y2JHnA4+I8jZsQDSWyMAP9pUAQd8irILXVge17GWjE4pUQu1+nbbxPG3ecZLh3qOKlQXvuqm9lHifOBQMXTdWKVNQI/lMjRBtbk7+k9dxeV4eowNSkGYbBrmxEHb4bwnagt/Uj9DA85w+Heq6pTQsx2AH6nynpfwv8FpQtUrAPUO++4X0nWAwiYZWNNAvcnk+xO8LGPqMLo23i1/wID8ntIGMWrmTD6hq8bbfaHJUDLqU7QI3MHaEVIO3MDbyErJzISIEKCFUhIEEKQQCaYkwEipyZRAp/wAUZrUpVkUKChTUPW5B/QTnCZyjizqBfm/Bm/jMBqqL3VCT6Ftv0MrFegeUt6HvAcYzJKb3NBlVmvs249j2lWxuUYin01EIA4YWI+4jN3qoBqDpexFwbEeKngwrDZvUbpY6geb7/iBBUy04etRAJfUBcEbAkXAJ849ajqYdOhzfqBGpSOOPXicpnSqGWompXtuOVI4PtCsHgnW1TqdX0tpNgyXG3qLaRAnyTD6EZC5Z7ku1tz3Go+Not+I8Tui011OGV7HcX4BccmWCnhmLB7AX2IG5t5ngzqlloDF9PUdgbdhxe/eBXLu6fMfd6YLCncAF+RceUOpVxUCVSd2KqBa24XquD53hOJycM5c6hdQCF6b2NwTY8wfEU0VwzE3A2uBa/iB42FoEOM+FqFY6ipVjyV2vDsv+FMMildBa9r6jzY3EFbPCp6UuPX9pqv8AEzFbImg+J3+0DeeZIKY+ZSICj6kJ/K/tFeGrKw85xWxOoXdi9/WD1UNgybMPzANFA3m3w573glDNbbOpB9L/AJElfOFPAP2gRvQANz2gGKxFthzO6+KdjsLesHWnvfk+MCBKW9zzDKbadzMCdzNUqbO4Cg/87mAyw1P5rLTHY63Nri/YS2YXC6VA+5gGU0kppt2Ni3i3eT18cSdCcwCn0qbDcntMqAIpc7WF5vC4YILndu8gzQ3CJ/Wwv6DcwJKSawGbvuB+86ZuwhKU9rD/AIJItELAWuhHMyliCh8idx/cSTGNBXqoy9J37D+0Bq7SB2keGq6kG/G0xjAmvODNqZqBumITTWValnMNpZxAsyLJgIkweZBjHKNcQK38V5alRGqFtD01Nm7Ec6T/AM7yjozlemzfgy7/ABs5OHdALbA3NrE3G3oP7zzxL6R6QLE+bK1NkYEH5ekKwuO1wPtK0mLZG6ePA/vCaBvyyrbm5/SF4LLqVQ7ve5IAGxJHMAFsVexItLz8BYgujq7airXBJvseJP8AD2QUAh1Uw7A2u2/ptH1DL6dM6kRUvs2kWv4cQDAk09OcPjEXZrj8SJ81SB29K8rHxJh7FCPOOq2eIB9JPt+8S47MPn2OnTpJ9YCMkgyV1DDeS16UGU22gCvhf6W9oOKjJs1iOxkuJcjdYK9S/wC8ApWBmGneADXe+xhSG/8AV94Hf8P4295mgdt52gHcX9TJ1w4JvYQIsLgtZ6z7DiOKCJTFyQPTkwHE1Qgtx6TvAYYu4dvpHA8TAc1rKlgLD94RlmGCjUfqO+8gqdTqvaFtUtAkxNSw+0gd71bf0r+SZHWxCsVXuDf95Blz63d+2qw9hAeqABzKrnnxPZjTobngt4ek4+Ls6NNBRT66m3oO5i3Jsm6btfx94BOAxT8uS3rGdXN0ReoC84qIEXiIMTpJJPMB7g8cNWscHkRwGBFxwZSstr9pY8qxXKN7ftAarNavKbBnF4HntFvOH0fWA0MtfzjTDZY8AugD4x7l+PYEAm8WUMrfwjGjl7INRHlABqVRVdKZQM7U3Z2PBAbSVHh4ytVsuak5Q7qD0nxH7xpj10YjqayP1U34Hg6E9rjY+xnePXSwLMHVtuePDfsbQEmKoADcfpHGT4e9JVO5W7odNrb9S/8APGLzSpl+t2UXFgN7+Rl1ymmXCkLpRb9TfURYduAIDbBUwilmNgbE37bQHF5vfan9/wBojzjNSzEA9I2EmwPUoMCc3JuTczd7cyVFm6trH0gB4uwUHxgaCzesKeorKNQuBuN4KlS5NlsPM3gS1BFeKWxv2jR9oJXW4gL3AIgb4WHMLThhACCEHjaFUBfjY+B7yZB5SYUlPlAloIh/lsZvFVAi7AXm0Fu95C1Iu124gcYXCFjrfc/pHeDXe3YSGilthDE2gaQ9ZM29S4O84Q2vIvmcwBKu5B/m4++0YF1o0yx2Cgk+sSYvF6GB7329TAfinGtUZMMh3a2u3hAzIcOcTWfEPwT0jwWXP5QAsIHlWCFKmqAW2F4WGMAd6NwbiIsywygEjbmWCu2xiDGEG6+MBfliWjhekhh2kGDw1oe9LpgN0YFQR33mWgeVVbqUPK/pC7wFmHUeEZUBtMmQGFDiF1fob0mTIFH+Jh0VvJzby6e3hE+I/wDrp/tP6zJkAHIxqrdW/TU53/lM9GwjHSwvsE2HYc9pkyBT8ZzHOS/RMmQGqwbE/S3oZkyAto/QPSbWZMgSVOII0yZAHacLMmQOhz9p2eZkyBJT5kyciZMgHUe8k7TJkCPxkI7zcyAnxH+cnr+8W5Rvj3vvv33mTIHoCzVSZMgBYriV+p9fvMmQGuGhVb6ZuZAGy7/MP+2M5kyB/9k="
+                class="img-fluid"
+              />
+              <a href="#!">
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.15)"
+                ></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#!" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mt-3">
+            <div
+              class="bg-image hover-overlay ripple"
+              data-mdb-ripple-color="light"
+            >
+              <img
+                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp"
+                class="img-fluid"
+              />
+              <a href="#!">
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.15)"
+                ></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#!" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mt-3">
+            <div
+              class="bg-image hover-overlay ripple"
+              data-mdb-ripple-color="light"
+            >
+              <img
+                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp"
+                class="img-fluid"
+              />
+              <a href="#!">
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.15)"
+                ></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#!" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mt-3">
+            <div
+              class="bg-image hover-overlay ripple"
+              data-mdb-ripple-color="light"
+            >
+              <img
+                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp"
+                class="img-fluid"
+              />
+              <a href="#!">
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.15)"
+                ></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#!" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted mt-5">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>
+                <h6 class="fst-italic mt-2">
+                  Book<span class="text-danger">Mag</span>
+                </h6>
+              </h6>
+              <p>
+                We are a legit book store that would cost you much money (Dey
+                play! )
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Categories</h6>
+              <p>
+                <a href="#!" class="text-reset">Fiction</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Non-Fiction</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">History</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Africa & Art</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Romance</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p>
+                <i class="fas fa-home me-3"></i>One address like that in Ukraine
+              </p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@bookmag.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> +380 63 246 8931</p>
+              <p><i class="fas fa-print me-3"></i> +380 63 246 8931</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" href="/">bookmag.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </body>
+
+  <!-- MDB -->
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
+  ></script>
+</html>
