@@ -9,5 +9,59 @@
   </head>
   <body>
     <h1>Official you're about to add a new book. Hurray ! {{ full_name }}</h1>
+    <h6>Fill in book details and submit</h6>
+
+    <form action="" method="post">
+      <!-- cross site resource forgery   -->
+      {% csrf_token %}
+      <div>
+        <label for="">Book title </label>
+        <input
+          type="text"
+          placeholder="Input book title"
+          name="title"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="">Select category </label>
+        <select name="category" id="" required>
+          <option value="">Choose a category</option>
+          {% for category in categories %}
+          <option value="{{category.id }}">
+            {{category.category_name | title }}
+          </option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div>
+        <label for="">Book Description </label>
+        <textarea name="description" id="description" required></textarea>
+      </div>
+
+      <div>
+        <label for="">Price </label>
+        <input type="number" placeholder="0.00" name="price" required />
+      </div>
+
+      <div>
+        <label for="">Upload Book Photo </label>
+        <input type="file" name="photo" required />
+      </div>
+
+      <div>
+        <label for="">Quantity Available </label>
+        <input type="number" placeholder="0" name="quantity" required />
+      </div>
+      <!-- 
+      <div>
+        <label for="">In store? </label>
+        <input type="checkbox" name="availability" required />
+      </div> -->
+
+      <button>Submit</button>
+    </form>
   </body>
 </html>
